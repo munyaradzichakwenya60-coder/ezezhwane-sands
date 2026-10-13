@@ -115,3 +115,9 @@
     gap: 44px;
   }
 }
+
+@media (max-width: 480px) {
+  .why-us { padding: 52px 0; }
+  .why-us-left h2 { font-size: 1.6rem; }
+  .why-item { padding: 18px 0; }
+}
