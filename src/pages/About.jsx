@@ -42,7 +42,7 @@ export default function About() {
 
           <div className="about-img-col">
             <img
-              src="https://images.unsplash.com/photo-1581093458791-9d42cc050b67?w=700&q=80"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80"
               alt="Building materials delivery"
             />
             <div className="about-badge">

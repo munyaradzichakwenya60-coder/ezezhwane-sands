@@ -45,7 +45,7 @@ export default function Products() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1581093458791-9d42cc050b67?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
