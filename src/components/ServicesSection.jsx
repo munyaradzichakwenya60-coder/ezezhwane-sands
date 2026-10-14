@@ -30,7 +30,7 @@ const services = [
     icon: <MdDeleteSweep size={40} />,
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from your site to any required location — quick, reliable and affordable.',
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=600&q=80',
+    img: '/rubble-removal.png',
   },
 ]
 
