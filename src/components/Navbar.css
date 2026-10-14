@@ -22,12 +22,18 @@
 
 .navbar-logo {
   display: flex;
-  align-items: baseline;
-  gap: 4px;
-  font-family: var(--font-heading);
-  font-weight: 800;
-  font-size: 1.25rem;
-  letter-spacing: 1px;
+  align-items: center;
+}
+
+.navbar-logo-img {
+  height: 48px;
+  width: auto;
+  object-fit: contain;
+  filter: brightness(0) invert(1); /* white on dark navbar */
+}
+
+.navbar.scrolled .navbar-logo-img {
+  filter: none; /* show original colors when navbar is white/scrolled */
 }
 
 .logo-ez { color: var(--red); }

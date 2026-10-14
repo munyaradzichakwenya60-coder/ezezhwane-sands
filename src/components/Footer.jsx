@@ -9,9 +9,7 @@ export default function Footer() {
       <div className="container footer-grid">
         <div className="footer-brand">
           <div className="footer-logo">
-            <span className="logo-ez">EZE</span>
-            <span className="logo-zhwane">ZHWANE</span>
-            <span className="logo-sands">SANDS</span>
+            <img src="/freecarokani-logo.jpeg" alt="Freecarokani / EzeZhwane Sands" className="footer-logo-img" />
           </div>
           <p>
             Freecarokani Investment Private Limited. Supplying quality building materials across Bulawayo and surrounding areas.

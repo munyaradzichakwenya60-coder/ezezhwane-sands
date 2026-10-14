@@ -28,9 +28,7 @@ export default function Navbar() {
     <header className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
-          <span className="logo-ez">EZE</span>
-          <span className="logo-zhwane">ZHWANE</span>
-          <span className="logo-sands">SANDS</span>
+          <img src="/freecarokani-logo.jpeg" alt="Freecarokani / EzeZhwane Sands" className="navbar-logo-img" />
         </Link>
 
         <nav className={`navbar-links ${menuOpen ? 'open' : ''}`}>
