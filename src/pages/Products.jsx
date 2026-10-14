@@ -5,7 +5,7 @@ const products = [
   {
     title: 'Riversand',
     desc: 'Fine, clean riversand ideal for plastering, brickwork, mortar mixing and all general construction use. Sourced from quality river beds.',
-    img: 'https://images.unsplash.com/photo-1500479694472-551d1fb6258d?w=700&q=80',
+    img: '/riversand.png',
     uses: 'Plastering · Brickwork · Mortar',
   },
   {
