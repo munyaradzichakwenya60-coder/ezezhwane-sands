@@ -23,7 +23,7 @@ const products = [
   {
     title: 'Gravel',
     desc: 'Natural gravel suitable for driveways, landscaping, drainage solutions, pathway construction and general fill.',
-    img: 'https://images.unsplash.com/photo-1568022162802-1f1d9c9ef87e?w=700&q=80',
+    img: '/gravel.jpg',
     uses: 'Driveways · Landscaping · Fill',
   },
   {

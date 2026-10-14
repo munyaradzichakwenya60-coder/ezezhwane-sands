@@ -24,7 +24,7 @@ const services = [
     icon: <MdConstruction size={40} />,
     title: 'Gravel',
     desc: 'Natural gravel for driveways, landscaping, drainage solutions and construction fill material.',
-    img: 'https://images.unsplash.com/photo-1568022162802-1f1d9c9ef87e?w=600&q=80',
+    img: '/gravel.jpg',
   },
   {
     icon: <MdDeleteSweep size={40} />,
