@@ -17,7 +17,7 @@ const products = [
   {
     title: 'Quarry Stone',
     desc: 'Crushed quarry stone for concrete aggregates, road construction, drainage systems and structural foundation work.',
-    img: 'https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=700&q=80',
+    img: '/quarry-stone.jpg',
     uses: 'Concrete Aggregate · Roads · Drainage',
   },
   {
