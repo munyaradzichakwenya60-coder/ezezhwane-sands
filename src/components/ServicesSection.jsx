@@ -12,7 +12,7 @@ const services = [
     icon: <MdWater size={40} />,
     title: 'Pitsand',
     desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy-duty construction projects.',
-    img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=600&q=80',
+    img: '/pitsand.png',
   },
   {
     icon: <MdLandscape size={40} />,
