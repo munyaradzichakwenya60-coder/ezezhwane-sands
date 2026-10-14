@@ -21,7 +21,7 @@
   height: 56px;
   width: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1); /* white version on dark footer */
+  mix-blend-mode: screen; /* makes white bg transparent on dark footer */
 }
 
 .footer-brand p {
