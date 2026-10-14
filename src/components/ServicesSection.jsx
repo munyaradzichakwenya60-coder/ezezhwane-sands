@@ -6,7 +6,7 @@ const services = [
     icon: <MdTerrain size={40} />,
     title: 'Riversand',
     desc: 'Fine, clean riversand ideal for plastering, brickwork and general construction use. Delivered in full 21-tonne truck loads.',
-    img: 'https://images.unsplash.com/photo-1500479694472-551d1fb6258d?w=600&q=80',
+    img: '/riversand.png',
   },
   {
     icon: <MdWater size={40} />,
