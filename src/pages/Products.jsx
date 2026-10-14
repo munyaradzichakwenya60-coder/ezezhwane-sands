@@ -11,7 +11,7 @@ const products = [
   {
     title: 'Pitsand',
     desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy construction. Stronger and coarser than riversand.',
-    img: 'https://images.unsplash.com/photo-1585771724684-38269d6639fd?w=700&q=80',
+    img: '/pitsand.png',
     uses: 'Concrete · Foundations · Heavy Builds',
   },
   {
