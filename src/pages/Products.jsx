@@ -29,7 +29,7 @@ const products = [
   {
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from households and construction sites to any required disposal location.',
-    img: 'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=80',
+    img: '/rubble-removal.png',
     uses: 'Site Cleanup · Household Rubble',
   },
   {
