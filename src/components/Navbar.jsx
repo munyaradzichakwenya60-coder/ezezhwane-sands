@@ -20,6 +20,7 @@ export default function Navbar() {
     { to: '/', label: 'Home' },
     { to: '/about', label: 'About' },
     { to: '/products', label: 'Products' },
+    { to: '/pricing', label: 'Pricing' },
     { to: '/gallery', label: 'Gallery' },
     { to: '/contact', label: 'Contact' },
   ]
