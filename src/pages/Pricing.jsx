@@ -37,7 +37,7 @@ const areas = [
   },
 ]
 
-const WHATSAPP = '263XXXXXXXXX'
+const WHATSAPP = '263718058420'
 
 export default function Pricing() {
   const [active, setActive] = useState(0)

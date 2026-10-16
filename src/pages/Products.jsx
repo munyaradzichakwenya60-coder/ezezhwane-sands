@@ -71,7 +71,7 @@ export default function Products() {
                     {p.uses}
                   </p>
                   <a
-                    href={`https://wa.me/263XXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(p.title)}`}
+                    href={`https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(p.title)}`}
                     className="product-order-btn"
                     target="_blank"
                     rel="noreferrer"

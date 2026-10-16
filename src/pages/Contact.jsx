@@ -10,7 +10,7 @@ export default function Contact() {
     const material = form.material.value
     const message = form.message.value
     const text = `Hi EzeZhwane Sands, my name is ${name}. I need ${material}. ${message}`
-    window.open(`https://wa.me/263XXXXXXXXX?text=${encodeURIComponent(text)}`, '_blank')
+    window.open(`https://wa.me/263718058420?text=${encodeURIComponent(text)}`, '_blank')
   }
 
   return (
@@ -48,14 +48,14 @@ export default function Contact() {
                   <MdPhone size={22} className="ci-icon" />
                   <div>
                     <strong>Phone</strong>
-                    <a href="tel:+263XXXXXXXXX">+263 XX XXX XXXX</a>
+                    <a href="tel:+263718058420">+263 71 805 8420</a>
                   </div>
                 </li>
                 <li>
                   <FaWhatsapp size={22} className="ci-icon" />
                   <div>
                     <strong>WhatsApp Orders</strong>
-                    <a href="https://wa.me/263XXXXXXXXX" target="_blank" rel="noreferrer">Message us on WhatsApp</a>
+                    <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer">Message us on WhatsApp</a>
                   </div>
                 </li>
                 <li>

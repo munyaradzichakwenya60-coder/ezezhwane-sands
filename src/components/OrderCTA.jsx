@@ -11,7 +11,7 @@ export default function OrderCTA() {
           <p>Message us on WhatsApp with your material, quantity and delivery location — we'll get back to you with a price and delivery time.</p>
         </div>
         <a
-          href="https://wa.me/263XXXXXXXXX?text=Hi%20EzeZhwane%20Sands%2C%20I%20would%20like%20to%20order%20building%20materials"
+          href="https://wa.me/263718058420?text=Hi%20EzeZhwane%20Sands%2C%20I%20would%20like%20to%20order%20building%20materials"
           className="cta-wa-btn"
           target="_blank"
           rel="noreferrer"

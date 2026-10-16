@@ -15,7 +15,7 @@ export default function Footer() {
             Freecarokani Investment Private Limited. Supplying quality building materials across Bulawayo and surrounding areas.
           </p>
           <div className="footer-social">
-            <a href="https://wa.me/263XXXXXXXXX" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <FaWhatsapp size={18} />
             </a>
             <a href="#" aria-label="Facebook">
@@ -55,7 +55,7 @@ export default function Footer() {
             </li>
             <li>
               <MdPhone size={16} />
-              <a href="tel:+263XXXXXXXXX">+263 XX XXX XXXX</a>
+              <a href="tel:+263718058420">+263 71 805 8420</a>
             </li>
             <li>
               <MdEmail size={16} />
@@ -63,7 +63,7 @@ export default function Footer() {
             </li>
             <li>
               <FaWhatsapp size={16} />
-              <a href="https://wa.me/263XXXXXXXXX" target="_blank" rel="noreferrer">WhatsApp Orders</a>
+              <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer">WhatsApp Orders</a>
             </li>
           </ul>
         </div>
