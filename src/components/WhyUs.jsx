@@ -39,7 +39,7 @@ export default function WhyUs() {
             Freecarokani Investment Private Limited — trading as <strong>EzeZhwane Sands</strong> — supplying raw building materials to Bulawayo's construction industry. From a single homeowner to large contractors, we deliver what you need, when you need it.
           </p>
           <a
-            href="https://wa.me/263XXXXXXXXX?text=Hi%2C%20I%20need%20a%20quote%20for%20building%20materials"
+            href="https://wa.me/263718058420?text=Hi%2C%20I%20need%20a%20quote%20for%20building%20materials"
             className="why-cta"
             target="_blank"
             rel="noreferrer"

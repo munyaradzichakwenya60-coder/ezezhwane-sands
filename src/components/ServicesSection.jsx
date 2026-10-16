@@ -53,7 +53,7 @@ export default function ServicesSection() {
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
                 <a
-                  href={`https://wa.me/263XXXXXXXXX?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(s.title)}`}
+                  href={`https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(s.title)}`}
                   className="service-link"
                   target="_blank"
                   rel="noreferrer"
