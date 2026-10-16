@@ -30,7 +30,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
           <img
-            src={scrolled ? '/freecarokani-logo-dark.png' : '/freecarokani-logo.jpeg'}
+            src="/freecarokani-logo-dark.png"
             alt="Freecarokani / EzeZhwane Sands"
             className="navbar-logo-img"
           />
