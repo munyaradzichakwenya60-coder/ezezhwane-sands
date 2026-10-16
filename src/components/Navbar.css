@@ -26,10 +26,10 @@
 }
 
 .navbar-logo-img {
-  height: 72px;
+  height: 68px;
   width: auto;
   object-fit: contain;
-  mix-blend-mode: screen;
+  display: block;
 }
 
 .logo-ez { color: var(--red); }
@@ -63,6 +63,20 @@
 .navbar-links a.active {
   color: var(--red);
   opacity: 1;
+}
+
+.navbar-links a.active {
+  position: relative;
+}
+
+.navbar-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--red);
 }
 
 .nav-cta {

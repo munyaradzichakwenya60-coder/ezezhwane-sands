@@ -43,11 +43,12 @@
 
 .hero-content h1 {
   color: var(--white);
-  font-size: clamp(2.2rem, 4.5vw, 3.8rem);
+  font-size: clamp(2.6rem, 5.5vw, 5rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
   text-transform: uppercase;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
+  letter-spacing: -0.5px;
 }
 
 .hero-content h1 span {
