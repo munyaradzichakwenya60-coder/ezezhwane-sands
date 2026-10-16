@@ -1,0 +1,148 @@
+.pricing-hero {
+  background-image: url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80');
+}
+
+/* ── Section wrapper ── */
+.pricing-section {
+  padding: 60px 24px 80px;
+  background: #f9f9f9;
+}
+
+.pricing-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pricing-note {
+  text-align: center;
+  color: #555;
+  font-size: 0.95rem;
+  margin-bottom: 28px;
+}
+
+/* ── Tabs ── */
+.pricing-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.pricing-tab {
+  padding: 10px 22px;
+  border: 2px solid #ddd;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.pricing-tab:hover {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.pricing-tab.active {
+  background: #c0392b;
+  border-color: #c0392b;
+  color: #fff;
+}
+
+/* ── Cards ── */
+.pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 36px;
+}
+
+.pricing-card {
+  background: #fff;
+  border: 1px solid #e8e8e8;
+  border-top: 4px solid #c0392b;
+  border-radius: 6px;
+  padding: 28px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.pricing-card-name {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #888;
+}
+
+.pricing-card-price {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #111;
+  line-height: 1;
+}
+
+.pricing-card-price span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #888;
+}
+
+.pricing-card-meta {
+  font-size: 0.78rem;
+  color: #aaa;
+  margin-bottom: 12px;
+}
+
+.pricing-card-btn {
+  display: block;
+  text-align: center;
+  padding: 10px 16px;
+  background: #111;
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 4px;
+  margin-top: auto;
+  transition: background 0.2s;
+}
+
+.pricing-card-btn:hover {
+  background: #25D366;
+}
+
+/* ── Disclaimer ── */
+.pricing-disclaimer {
+  text-align: center;
+  font-size: 0.82rem;
+  color: #999;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── Responsive ── */
+@media (max-width: 640px) {
+  .pricing-tabs {
+    gap: 8px;
+  }
+
+  .pricing-tab {
+    padding: 8px 14px;
+    font-size: 0.82rem;
+  }
+
+  .pricing-cards {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .pricing-card-price {
+    font-size: 1.8rem;
+  }
+}
