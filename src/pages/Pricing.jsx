@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useWhatsApp } from '../lib/whatsapp'
 import './Pricing.css'
 import './PageStyles.css'
 
@@ -37,10 +38,9 @@ const areas = [
   },
 ]
 
-const WHATSAPP = '263718058420'
-
 export default function Pricing() {
   const [active, setActive] = useState(0)
+  const wa = useWhatsApp()
   const area = areas[active]
 
   return (
@@ -79,7 +79,7 @@ export default function Pricing() {
                 <div className="pricing-card-price">${p.price}<span>.00</span></div>
                 <div className="pricing-card-meta">Per 21-tonne load · {area.name}</div>
                 <a
-                  href={`https://wa.me/${WHATSAPP}?text=Hi%2C%20I'd%20like%20to%20order%20${encodeURIComponent(p.name)}%20delivered%20to%20${encodeURIComponent(area.name)}.%20Price%3A%20%24${p.price}`}
+                  href={wa({ product: p.name, intent: 'order', area: area.name, price: p.price, where: 'price card' })}
                   className="pricing-card-btn"
                   target="_blank"
                   rel="noopener noreferrer"

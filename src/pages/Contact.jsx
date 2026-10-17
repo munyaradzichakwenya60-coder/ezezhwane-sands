@@ -1,5 +1,6 @@
 import { MdLocationOn, MdPhone, MdEmail, MdAccessTime } from 'react-icons/md'
 import { FaWhatsapp } from 'react-icons/fa'
+import { buildMessage, WHATSAPP_NUMBER } from '../lib/whatsapp'
 import './PageStyles.css'
 
 export default function Contact() {
@@ -9,8 +10,19 @@ export default function Contact() {
     const name = form.name.value
     const material = form.material.value
     const message = form.message.value
-    const text = `Hi EzeZhwane Sands, my name is ${name}. I need ${material}. ${message}`
-    window.open(`https://wa.me/263718058420?text=${encodeURIComponent(text)}`, '_blank')
+    const phone = form.phone.value
+    const text = buildMessage({
+      intent: 'enquire',
+      product: material === 'Multiple Materials' ? undefined : material,
+      extra: [
+        `Name: ${name}`,
+        phone ? `Phone: ${phone}` : null,
+        material === 'Multiple Materials' ? 'Material: Multiple materials' : null,
+        `Details: ${message}`,
+      ].filter(Boolean).join('\n'),
+      source: 'Contact page (enquiry form)',
+    })
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`, '_blank')
   }
 
   return (
@@ -55,7 +67,7 @@ export default function Contact() {
                   <FaWhatsapp size={22} className="ci-icon" />
                   <div>
                     <strong>WhatsApp Orders</strong>
-                    <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer">Message us on WhatsApp</a>
+                    <a href={`https://wa.me/${WHATSAPP_NUMBER}`} target="_blank" rel="noreferrer">Message us on WhatsApp</a>
                   </div>
                 </li>
                 <li>

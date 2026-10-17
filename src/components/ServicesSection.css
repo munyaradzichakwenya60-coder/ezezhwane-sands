@@ -70,6 +70,14 @@
 
 .service-link:hover { opacity: 0.7; }
 
+.service-actions {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.service-link-alt { color: var(--gray-text); }
+
 @media (max-width: 900px) {
   .services-grid { grid-template-columns: repeat(2, 1fr); }
 }

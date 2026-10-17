@@ -1,12 +1,14 @@
 import { useState, useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { MdMenu, MdClose } from 'react-icons/md'
+import { useWhatsApp } from '../lib/whatsapp'
 import './Navbar.css'
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const location = useLocation()
+  const wa = useWhatsApp()
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10)
@@ -47,7 +49,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="https://wa.me/263718058420"
+            href={wa({ intent: 'order', where: 'menu button' })}
             className="nav-cta"
             target="_blank"
             rel="noreferrer"

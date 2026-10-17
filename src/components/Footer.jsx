@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md'
 import { FaWhatsapp, FaFacebook } from 'react-icons/fa'
+import { useWhatsApp } from '../lib/whatsapp'
 import './Footer.css'
 
 export default function Footer() {
+  const wa = useWhatsApp()
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -15,7 +17,7 @@ export default function Footer() {
             Freecarokani Investment Private Limited. Supplying quality building materials across Bulawayo and surrounding areas.
           </p>
           <div className="footer-social">
-            <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer" aria-label="WhatsApp">
+            <a href={wa({ intent: 'hello', where: 'footer icon' })} target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <FaWhatsapp size={18} />
             </a>
             <a href="#" aria-label="Facebook">
@@ -63,7 +65,7 @@ export default function Footer() {
             </li>
             <li>
               <FaWhatsapp size={16} />
-              <a href="https://wa.me/263718058420" target="_blank" rel="noreferrer">WhatsApp Orders</a>
+              <a href={wa({ intent: 'order', where: 'footer link' })} target="_blank" rel="noreferrer">WhatsApp Orders</a>
             </li>
           </ul>
         </div>
