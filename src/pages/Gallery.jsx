@@ -1,15 +1,15 @@
 import './PageStyles.css'
 
 const photos = [
-  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=800&q=80',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=800&q=80',
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80',
-  'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=800&q=80',
-  'https://images.unsplash.com/photo-1590593162201-f67611a18b87?w=800&q=80',
-  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=800&q=80',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=800&q=80',
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=800&q=80',
-  'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=800&q=80',
+  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=70',
+  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=70',
+  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=70',
+  'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=700&q=70',
+  'https://images.unsplash.com/photo-1590593162201-f67611a18b87?w=700&q=70',
+  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=70',
+  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=70',
+  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=70',
+  'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=700&q=70',
 ]
 
 export default function Gallery() {
@@ -17,7 +17,7 @@ export default function Gallery() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=70')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

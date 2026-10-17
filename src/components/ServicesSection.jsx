@@ -7,13 +7,13 @@ const services = [
     icon: <MdTerrain size={40} />,
     title: 'Riversand',
     desc: 'Fine, clean riversand ideal for plastering, brickwork and general construction use. Delivered in full 21-tonne truck loads.',
-    img: '/riversand.png',
+    img: '/riversand.webp',
   },
   {
     icon: <MdWater size={40} />,
     title: 'Pitsand',
     desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy-duty construction projects.',
-    img: '/pitsand.png',
+    img: '/pitsand.webp',
   },
   {
     icon: <MdLandscape size={40} />,
@@ -25,13 +25,13 @@ const services = [
     icon: <MdConstruction size={40} />,
     title: 'Gravel',
     desc: 'Natural gravel for driveways, landscaping, drainage solutions and construction fill material.',
-    img: '/gravel.png',
+    img: '/gravel.webp',
   },
   {
     icon: <MdDeleteSweep size={40} />,
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from your site to any required location — quick, reliable and affordable.',
-    img: '/rubble-removal.png',
+    img: '/rubble-removal.webp',
   },
 ]
 

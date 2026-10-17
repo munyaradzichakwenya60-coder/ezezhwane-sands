@@ -32,7 +32,7 @@ export default function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="navbar-logo">
           <img
-            src="/freecarokani-logo-transparent.png"
+            src="/freecarokani-logo-transparent.webp"
             alt="Freecarokani / EzeZhwane Sands"
             className="navbar-logo-img"
           />
