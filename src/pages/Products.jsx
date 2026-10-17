@@ -6,13 +6,13 @@ const products = [
   {
     title: 'Riversand',
     desc: 'Fine, clean riversand ideal for plastering, brickwork, mortar mixing and all general construction use. Sourced from quality river beds.',
-    img: '/riversand.png',
+    img: '/riversand.webp',
     uses: 'Plastering · Brickwork · Mortar',
   },
   {
     title: 'Pitsand',
     desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy construction. Stronger and coarser than riversand.',
-    img: '/pitsand.png',
+    img: '/pitsand.webp',
     uses: 'Concrete · Foundations · Heavy Builds',
   },
   {
@@ -24,19 +24,19 @@ const products = [
   {
     title: 'Gravel',
     desc: 'Natural gravel suitable for driveways, landscaping, drainage solutions, pathway construction and general fill.',
-    img: '/gravel.png',
+    img: '/gravel.webp',
     uses: 'Driveways · Landscaping · Fill',
   },
   {
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from households and construction sites to any required disposal location.',
-    img: '/rubble-removal.png',
+    img: '/rubble-removal.webp',
     uses: 'Site Cleanup · Household Rubble',
   },
   {
     title: 'Bulk Delivery',
     desc: 'All materials are delivered in our 21-tonne trucks — filled to capacity. We cover Bulawayo and surrounding areas.',
-    img: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=80',
+    img: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=70',
     uses: '21 Tonnes · Full Load · City + Surrounds',
   },
 ]
@@ -47,7 +47,7 @@ export default function Products() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=70')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

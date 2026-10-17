@@ -4,7 +4,7 @@ import './PageStyles.css'
 export default function About() {
   return (
     <main>
-      <div className="page-hero" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80')" }}>
+      <div className="page-hero" style={{ backgroundImage: "url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1200&q=70')" }}>
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
           <h1>About <span>EzeZhwane Sands</span></h1>
@@ -42,7 +42,7 @@ export default function About() {
 
           <div className="about-img-col">
             <img
-              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=80"
+              src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=70"
               alt="Building materials delivery"
             />
             <div className="about-badge">

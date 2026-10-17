@@ -29,7 +29,7 @@ export default function Contact() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1600&q=80')" }}
+        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=1200&q=70')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
