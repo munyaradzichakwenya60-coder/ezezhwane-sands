@@ -1,10 +1,12 @@
 import { FaWhatsapp } from 'react-icons/fa'
+import { useWhatsApp } from '../lib/whatsapp'
 import './WhatsAppButton.css'
 
 export default function WhatsAppButton() {
+  const wa = useWhatsApp()
   return (
     <a
-      href="https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20building%20materials"
+      href={wa({ intent: 'order', where: 'floating button' })}
       className="whatsapp-fab"
       target="_blank"
       rel="noreferrer"

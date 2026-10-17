@@ -1,4 +1,5 @@
 import { FaWhatsapp } from 'react-icons/fa'
+import { useWhatsApp } from '../lib/whatsapp'
 import './PageStyles.css'
 
 const products = [
@@ -41,6 +42,7 @@ const products = [
 ]
 
 export default function Products() {
+  const wa = useWhatsApp()
   return (
     <main>
       <div
@@ -70,14 +72,24 @@ export default function Products() {
                   <p style={{ fontSize: '0.78rem', color: 'var(--red)', fontWeight: 700, marginBottom: 18, textTransform: 'uppercase', letterSpacing: '0.5px' }}>
                     {p.uses}
                   </p>
-                  <a
-                    href={`https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(p.title)}`}
-                    className="product-order-btn"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <FaWhatsapp size={15} /> Order on WhatsApp
-                  </a>
+                  <div className="product-actions">
+                    <a
+                      href={wa({ product: p.title, intent: 'order', where: 'product card' })}
+                      className="product-order-btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaWhatsapp size={15} /> Order
+                    </a>
+                    <a
+                      href={wa({ product: p.title, intent: 'enquire', where: 'product card' })}
+                      className="product-order-btn product-enquire-btn"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
+                      <FaWhatsapp size={15} /> Enquire
+                    </a>
+                  </div>
                 </div>
               </div>
             ))}

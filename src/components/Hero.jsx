@@ -1,8 +1,10 @@
 import { Link } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
+import { useWhatsApp } from '../lib/whatsapp'
 import './Hero.css'
 
 export default function Hero() {
+  const wa = useWhatsApp()
   return (
     <section className="hero">
       <div className="hero-overlay" />
@@ -19,7 +21,7 @@ export default function Hero() {
           </p>
           <div className="hero-btns">
             <a
-              href="https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20building%20materials"
+              href={wa({ intent: 'order', where: 'top banner' })}
               className="btn-red hero-wa"
               target="_blank"
               rel="noreferrer"

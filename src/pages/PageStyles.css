@@ -187,6 +187,18 @@
 
 .product-order-btn:hover { opacity: 0.85; }
 
+.product-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.product-enquire-btn {
+  background: transparent;
+  color: #25D366;
+  box-shadow: inset 0 0 0 2px #25D366;
+}
+
 /* Gallery */
 .gallery-section { background: var(--white); }
 

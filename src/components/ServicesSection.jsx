@@ -1,4 +1,5 @@
 import { MdTerrain, MdWater, MdLandscape, MdConstruction, MdDeleteSweep } from 'react-icons/md'
+import { useWhatsApp } from '../lib/whatsapp'
 import './ServicesSection.css'
 
 const services = [
@@ -35,6 +36,7 @@ const services = [
 ]
 
 export default function ServicesSection() {
+  const wa = useWhatsApp()
   return (
     <section className="services-section">
       <div className="container">
@@ -52,14 +54,24 @@ export default function ServicesSection() {
                 <div className="service-icon">{s.icon}</div>
                 <h3>{s.title}</h3>
                 <p>{s.desc}</p>
-                <a
-                  href={`https://wa.me/263718058420?text=Hi%2C%20I%20would%20like%20to%20order%20${encodeURIComponent(s.title)}`}
-                  className="service-link"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  Order Now →
-                </a>
+                <div className="service-actions">
+                  <a
+                    href={wa({ product: s.title, intent: 'order', where: 'products section' })}
+                    className="service-link"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Order Now →
+                  </a>
+                  <a
+                    href={wa({ product: s.title, intent: 'enquire', where: 'products section' })}
+                    className="service-link service-link-alt"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Enquire
+                  </a>
+                </div>
               </div>
             </div>
           ))}
