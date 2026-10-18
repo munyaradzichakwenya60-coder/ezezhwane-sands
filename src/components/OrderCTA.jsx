@@ -10,7 +10,7 @@ export default function OrderCTA() {
       <div className="container order-cta-inner">
         <div className="order-cta-text">
           <h2>Ready to Order?</h2>
-          <p>Message us on WhatsApp with your material, quantity and delivery location — we'll get back to you with a price and delivery time.</p>
+          <p>Message us on WhatsApp with your material, quantity and delivery location and we'll get back to you with a price and delivery time.</p>
         </div>
         <a
           {...picker('Ready to Order section')}

@@ -34,7 +34,7 @@ export default function Contact() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
           <h1>Contact <span>Us</span></h1>
-          <p>Get a quote or place an order — we respond fast</p>
+          <p>Get a quote or place an order. We respond fast</p>
         </div>
       </div>
 
@@ -42,7 +42,7 @@ export default function Contact() {
         <div className="container">
           <div className="section-title">
             <h2>Get In <span>Touch</span></h2>
-            <p>Fill in the form below and we'll redirect you to WhatsApp with your details pre-filled — fastest way to get a quote.</p>
+            <p>Fill in the form below and we'll redirect you to WhatsApp with your details pre-filled, the fastest way to get a quote.</p>
           </div>
 
           <div className="contact-inner">
@@ -81,7 +81,7 @@ export default function Contact() {
                   <MdAccessTime size={22} className="ci-icon" />
                   <div>
                     <strong>Operating Hours</strong>
-                    Monday – Saturday: 7am – 5pm<br />
+                    Monday to Saturday: 7am to 5pm<br />
                     Sunday: By arrangement
                   </div>
                 </li>

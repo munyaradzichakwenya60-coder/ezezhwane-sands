@@ -75,7 +75,7 @@ export default function Footer() {
 
       <div className="footer-bottom">
         <div className="container">
-          <p>© {new Date().getFullYear()} EzeZhwane Sands — Freecarokani Investment Pvt Ltd. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} EzeZhwane Sands | Freecarokani Investment Pvt Ltd. All rights reserved.</p>
         </div>
       </div>
     </footer>

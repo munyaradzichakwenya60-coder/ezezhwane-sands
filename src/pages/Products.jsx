@@ -35,7 +35,7 @@ const products = [
   },
   {
     title: 'Bulk Delivery',
-    desc: 'All materials are delivered in our 21-tonne trucks — filled to capacity. We cover Bulawayo and surrounding areas.',
+    desc: 'All materials are delivered in our 21-tonne trucks, filled to capacity. We cover Bulawayo and surrounding areas.',
     img: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=70',
     uses: '21 Tonnes · Full Load · City + Surrounds',
   },

@@ -30,7 +30,7 @@ export default function Gallery() {
         <div className="container">
           <div className="section-title">
             <h2>Work <span>In Action</span></h2>
-            <p>Placeholder images below — these will be replaced with EzeZhwane's own site photos once provided.</p>
+            <p>Placeholder images below. These will be replaced with EzeZhwane's own site photos once provided.</p>
           </div>
           <div className="gallery-grid">
             {photos.map((src, i) => (

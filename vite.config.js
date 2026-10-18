@@ -39,7 +39,7 @@ function productSharePages() {
     <script>location.replace('/products')</script>
   </head>
   <body>
-    <p><a href="/products">${esc(p.title)} – view on EzeZhwane Sands</a></p>
+    <p><a href="/products">${esc(p.title)}: view on EzeZhwane Sands</a></p>
   </body>
 </html>
 `

@@ -51,7 +51,7 @@ function ProductSheet({ from, onClose }) {
     }
   }, [onClose])
 
-  const where = `product list – ${from}`
+  const where = `product list, ${from}`
 
   return (
     <div className="picker-overlay" onClick={onClose}>

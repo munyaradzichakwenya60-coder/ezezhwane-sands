@@ -63,7 +63,7 @@
   background: var(--red-dark);
 }
 
-/* Right column — numbered items */
+/* Right column: numbered items */
 .why-us-right {
   display: flex;
   flex-direction: column;
