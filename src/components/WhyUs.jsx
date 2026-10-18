@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { useWhatsApp } from '../lib/whatsapp'
+import { usePicker } from './ProductPicker'
 import './WhyUs.css'
 
 const points = [
@@ -26,7 +26,7 @@ const points = [
 ]
 
 export default function WhyUs() {
-  const wa = useWhatsApp()
+  const { picker } = usePicker()
   return (
     <section className="why-us">
       <div className="container why-us-inner">
@@ -41,10 +41,8 @@ export default function WhyUs() {
             Freecarokani Investment Private Limited — trading as <strong>EzeZhwane Sands</strong> — supplying raw building materials to Bulawayo's construction industry. From a single homeowner to large contractors, we deliver what you need, when you need it.
           </p>
           <a
-            href={wa({ intent: 'quote', where: 'Get a Quote button' })}
+            {...picker('Get a Quote button')}
             className="why-cta"
-            target="_blank"
-            rel="noreferrer"
           >
             Get a Quote
           </a>

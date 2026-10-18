@@ -9,6 +9,7 @@ export const CATALOG = [
     action: 'order',
     blurb: 'Fine, clean riversand for plastering, brickwork and mortar. Delivered in 21-tonne loads in Bulawayo.',
     og: '/og/riversand.jpg',
+    thumb: '/thumbs/riversand.webp',
   },
   {
     slug: 'pitsand',
@@ -16,6 +17,7 @@ export const CATALOG = [
     action: 'order',
     blurb: 'Coarse pitsand for concrete mixing, foundations and heavy construction. Delivered in 21-tonne loads.',
     og: '/og/pitsand.jpg',
+    thumb: '/thumbs/pitsand.webp',
   },
   {
     slug: 'quarry-stone',
@@ -23,6 +25,7 @@ export const CATALOG = [
     action: 'order',
     blurb: 'Crushed quarry stone for concrete aggregate, roads and drainage. Delivered in 21-tonne loads.',
     og: '/og/quarry-stone.jpg',
+    thumb: '/thumbs/quarry-stone.webp',
   },
   {
     slug: 'gravel',
@@ -30,6 +33,7 @@ export const CATALOG = [
     action: 'order',
     blurb: 'Natural gravel for driveways, landscaping, drainage and fill. Delivered in 21-tonne loads.',
     og: '/og/gravel.jpg',
+    thumb: '/thumbs/gravel.webp',
   },
   {
     slug: 'rubble-removal',
@@ -37,6 +41,7 @@ export const CATALOG = [
     action: 'book',
     blurb: 'We collect and remove building rubble from households and construction sites in Bulawayo.',
     og: '/og/rubble-removal.jpg',
+    thumb: '/thumbs/rubble-removal.webp',
   },
   {
     slug: 'bulk-delivery',
@@ -44,6 +49,7 @@ export const CATALOG = [
     action: 'order',
     blurb: 'Full 21-tonne truck deliveries across Bulawayo and surrounding areas.',
     og: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=70',
+    thumb: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=160&q=60',
   },
 ]
 

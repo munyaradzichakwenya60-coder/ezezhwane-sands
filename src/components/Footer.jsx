@@ -2,10 +2,12 @@ import { Link } from 'react-router-dom'
 import { MdLocationOn, MdPhone, MdEmail } from 'react-icons/md'
 import { FaWhatsapp, FaFacebook } from 'react-icons/fa'
 import { useWhatsApp } from '../lib/whatsapp'
+import { usePicker } from './ProductPicker'
 import './Footer.css'
 
 export default function Footer() {
   const wa = useWhatsApp()
+  const { picker } = usePicker()
   return (
     <footer className="footer">
       <div className="container footer-grid">
@@ -65,7 +67,7 @@ export default function Footer() {
             </li>
             <li>
               <FaWhatsapp size={16} />
-              <a href={wa({ intent: 'order', where: 'footer link' })} target="_blank" rel="noreferrer">WhatsApp Orders</a>
+              <a {...picker('footer link')}>WhatsApp Orders</a>
             </li>
           </ul>
         </div>
