@@ -1,10 +1,10 @@
 import { Link } from 'react-router-dom'
 import { FaWhatsapp } from 'react-icons/fa'
-import { useWhatsApp } from '../lib/whatsapp'
+import { usePicker } from './ProductPicker'
 import './Hero.css'
 
 export default function Hero() {
-  const wa = useWhatsApp()
+  const { picker } = usePicker()
   return (
     <section className="hero">
       <div className="hero-overlay" />
@@ -21,10 +21,8 @@ export default function Hero() {
           </p>
           <div className="hero-btns">
             <a
-              href={wa({ intent: 'order', where: 'top banner' })}
+              {...picker('top banner button')}
               className="btn-red hero-wa"
-              target="_blank"
-              rel="noreferrer"
             >
               <FaWhatsapp size={18} /> Order on WhatsApp
             </a>

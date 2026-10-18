@@ -1,9 +1,9 @@
 import { FaWhatsapp } from 'react-icons/fa'
-import { useWhatsApp } from '../lib/whatsapp'
+import { usePicker } from './ProductPicker'
 import './OrderCTA.css'
 
 export default function OrderCTA() {
-  const wa = useWhatsApp()
+  const { picker } = usePicker()
   return (
     <section className="order-cta">
       <div className="order-cta-overlay" />
@@ -13,10 +13,8 @@ export default function OrderCTA() {
           <p>Message us on WhatsApp with your material, quantity and delivery location — we'll get back to you with a price and delivery time.</p>
         </div>
         <a
-          href={wa({ intent: 'order', where: 'Ready to Order section' })}
+          {...picker('Ready to Order section')}
           className="cta-wa-btn"
-          target="_blank"
-          rel="noreferrer"
         >
           <FaWhatsapp size={22} />
           WhatsApp Us Now

@@ -8,11 +8,13 @@ import Gallery from './pages/Gallery'
 import Contact from './pages/Contact'
 import Pricing from './pages/Pricing'
 import WhatsAppButton from './components/WhatsAppButton'
+import { PickerProvider } from './components/ProductPicker'
 import './index.css'
 
 export default function App() {
   return (
     <BrowserRouter>
+      <PickerProvider>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -24,6 +26,7 @@ export default function App() {
       </Routes>
       <Footer />
       <WhatsAppButton />
+      </PickerProvider>
     </BrowserRouter>
   )
 }

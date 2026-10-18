@@ -1,15 +1,13 @@
 import { FaWhatsapp } from 'react-icons/fa'
-import { useWhatsApp } from '../lib/whatsapp'
+import { usePicker } from './ProductPicker'
 import './WhatsAppButton.css'
 
 export default function WhatsAppButton() {
-  const wa = useWhatsApp()
+  const { picker } = usePicker()
   return (
     <a
-      href={wa({ intent: 'order', where: 'floating button' })}
+      {...picker('floating button')}
       className="whatsapp-fab"
-      target="_blank"
-      rel="noreferrer"
       aria-label="Chat on WhatsApp"
     >
       <FaWhatsapp size={30} />
