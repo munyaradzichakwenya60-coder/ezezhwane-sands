@@ -23,10 +23,10 @@ export const productLink = (slug) =>
 /**
  * Build the WhatsApp message.
  *
- * intent:    'order'   – customer wants to buy / book
- *            'enquire' – customer wants availability and price first
- *            'quote'   – general "I need a quote"
- *            'hello'   – no specific request
+ * intent:    'order':   customer wants to buy / book
+ *            'enquire': customer wants availability and price first
+ *            'quote':   general "I need a quote"
+ *            'hello':   no specific request
  * product:   product / service name (optional)
  * area, price: delivery area and price from the Pricing page (optional)
  * source:    where on the site the click happened, e.g. 'Products page'
@@ -57,7 +57,7 @@ export function buildMessage({ intent = 'order', product, area, price, source, e
   if (extra) lines.push(extra)
 
   if (item) lines.push('', `Product: ${productLink(item.slug)}`)
-  if (source) lines.push('', `Sent from the website – ${source}`)
+  if (source) lines.push('', `Sent from the website: ${source}`)
 
   return lines.join('\n').replace(/\n{3,}/g, '\n\n')
 }

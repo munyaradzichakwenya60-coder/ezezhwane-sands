@@ -93,7 +93,7 @@ export default function Pricing() {
           {/* Disclaimer */}
           <p className="pricing-disclaimer">
             Prices are for delivery within Bulawayo and surrounding areas. Outside-Bulawayo deliveries
-            are available by agreement — contact us for a quote.
+            are available by agreement. Contact us for a quote.
           </p>
         </div>
       </section>

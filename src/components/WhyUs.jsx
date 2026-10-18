@@ -38,7 +38,7 @@ export default function WhyUs() {
             <span>Every Time.</span>
           </h2>
           <p className="why-desc">
-            Freecarokani Investment Private Limited — trading as <strong>EzeZhwane Sands</strong> — supplying raw building materials to Bulawayo's construction industry. From a single homeowner to large contractors, we deliver what you need, when you need it.
+            Freecarokani Investment Private Limited, trading as <strong>EzeZhwane Sands</strong>, supplies raw building materials to Bulawayo's construction industry. From a single homeowner to large contractors, we deliver what you need, when you need it.
           </p>
           <a
             {...picker('Get a Quote button')}
