@@ -19,7 +19,7 @@ const services = [
     icon: <MdLandscape size={40} />,
     title: 'Quarry Stone',
     desc: 'Crushed quarry stone for concrete aggregates, road construction, drainage and structural foundations.',
-    img: '/quarry-stone.jpg',
+    img: '/photos/quarry-stone.webp',
   },
   {
     icon: <MdConstruction size={40} />,
