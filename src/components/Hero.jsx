@@ -10,7 +10,7 @@ export default function Hero() {
       <div className="hero-overlay" />
       <div className="container">
         <div className="hero-content">
-          <p className="hero-sub">Bulawayo's Trusted Building Materials Supplier</p>
+          <p className="hero-sub">Bulawayo's Trusted Construction Aggregates Supplier</p>
           <h1>
             Building Bulawayo,<br />
             <span>One Load at a Time</span>

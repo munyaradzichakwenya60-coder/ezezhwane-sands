@@ -9,7 +9,7 @@ const areas = [
     products: [
       { name: 'Riversand', price: 260 },
       { name: 'Pitsand', price: 240 },
-      { name: 'Quarry (Transport)', price: 120 },
+      { name: 'Quarry (Transport)', price: 140 },
     ],
   },
   {
@@ -17,7 +17,7 @@ const areas = [
     products: [
       { name: 'Riversand', price: 270 },
       { name: 'Pitsand', price: 240 },
-      { name: 'Quarry (Transport)', price: 130 },
+      { name: 'Quarry (Transport)', price: 150 },
     ],
   },
   {
@@ -50,7 +50,7 @@ export default function Pricing() {
         <div className="page-hero-overlay" />
         <div className="page-hero-content">
           <h1>Delivery Pricing</h1>
-          <p>All prices are per 21-tonne truckload, paid before delivery</p>
+          <p>All prices are per 21-tonne truckload, payment before delivery encouraged</p>
         </div>
       </section>
 

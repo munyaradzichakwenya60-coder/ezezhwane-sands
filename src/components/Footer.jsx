@@ -16,7 +16,7 @@ export default function Footer() {
             <img src="/freecarokani-logo.jpeg" alt="Freecarokani / EzeZhwane Sands" className="footer-logo-img" />
           </div>
           <p>
-            Freecarokani Investment Private Limited. Supplying quality building materials across Bulawayo and surrounding areas.
+            Freecarokani Investment Private Limited. Supplying quality construction aggregates across Bulawayo and surrounding areas.
           </p>
           <div className="footer-social">
             <a href={wa({ intent: 'hello', where: 'footer icon' })} target="_blank" rel="noreferrer" aria-label="WhatsApp">
