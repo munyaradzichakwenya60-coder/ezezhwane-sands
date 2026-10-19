@@ -42,7 +42,7 @@ export default function ServicesSection() {
       <div className="container">
         <div className="section-title">
           <h2>Our <span>Products & Services</span></h2>
-          <p>We supply high-quality building materials to construction sites, contractors and homeowners across Bulawayo and surrounding areas.</p>
+          <p>We supply high-quality construction aggregates (Riversand, Pitsand, Quarry and Gravel) to construction sites, contractors and homeowners across Bulawayo and surrounding areas.</p>
         </div>
         <div className="services-grid">
           {services.map((s, i) => (

@@ -52,7 +52,7 @@ export default function Products() {
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
           <h1>Our <span>Products</span></h1>
-          <p>Quality raw building materials delivered to your site</p>
+          <p>Quality construction aggregates delivered to your site</p>
         </div>
       </div>
 

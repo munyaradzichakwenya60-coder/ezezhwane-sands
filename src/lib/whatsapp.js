@@ -43,13 +43,13 @@ export function buildMessage({ intent = 'order', product, area, price, source, e
     const verb = item?.action === 'book' ? 'book' : 'order'
     lines.push(`Hi ${BUSINESS}, I'd like to ${verb} *${name}*.`)
   } else if (intent === 'quote') {
-    lines.push(`Hi ${BUSINESS}, I need a quote for building materials.`)
+    lines.push(`Hi ${BUSINESS}, I need a quote for construction aggregates.`)
   } else if (intent === 'enquire') {
-    lines.push(`Hi ${BUSINESS}, I have an enquiry about your building materials.`)
+    lines.push(`Hi ${BUSINESS}, I have an enquiry about your construction aggregates.`)
   } else if (intent === 'hello') {
     lines.push(`Hi ${BUSINESS}, I'd like to get in touch.`)
   } else {
-    lines.push(`Hi ${BUSINESS}, I'd like to order building materials.`)
+    lines.push(`Hi ${BUSINESS}, I'd like to order construction aggregates.`)
   }
 
   if (area) lines.push(`Delivery area: ${area}`)
