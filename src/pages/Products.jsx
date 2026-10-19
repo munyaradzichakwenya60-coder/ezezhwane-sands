@@ -18,7 +18,7 @@ const products = [
   {
     title: 'Quarry Stone',
     desc: 'Crushed quarry stone for concrete aggregates, road construction, drainage systems and structural foundation work.',
-    img: '/quarry-stone.jpg',
+    img: '/photos/quarry-stone.webp',
     uses: 'Concrete Aggregate · Roads · Drainage',
   },
   {
@@ -36,7 +36,7 @@ const products = [
   {
     title: 'Bulk Delivery',
     desc: 'All materials are delivered in our 21-tonne trucks, filled to capacity. We cover Bulawayo and surrounding areas.',
-    img: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=70',
+    img: '/photos/truck-side.webp',
     uses: '21 Tonnes · Full Load · City + Surrounds',
   },
 ]
@@ -47,7 +47,7 @@ export default function Products() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=1200&q=70')" }}
+        style={{ backgroundImage: "url('/photos/truck-front.webp')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">

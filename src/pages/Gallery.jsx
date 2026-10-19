@@ -1,15 +1,15 @@
 import './PageStyles.css'
 
 const photos = [
-  'https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=700&q=70',
-  'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=700&q=70',
-  'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=700&q=70',
-  'https://images.unsplash.com/photo-1567538096630-e0c55bd6374c?w=700&q=70',
-  'https://images.unsplash.com/photo-1590593162201-f67611a18b87?w=700&q=70',
-  'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=700&q=70',
-  'https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=700&q=70',
-  'https://images.unsplash.com/photo-1503387762-592deb58ef4e?w=700&q=70',
-  'https://images.unsplash.com/photo-1582139329536-e7284fece509?w=700&q=70',
+  { src: '/photos/truck-side.webp', alt: 'EzeZhwane Sands 21-tonne tipper truck' },
+  { src: '/photos/offloading.webp', alt: 'Truck offloading a load of sand' },
+  { src: '/photos/truck-front.webp', alt: 'EzeZhwane Sands truck, front view' },
+  { src: '/photos/sand-pile.webp', alt: 'Delivered sand on site' },
+  { src: '/photos/quarry-stone.webp', alt: 'Crushed quarry stone' },
+  { src: '/photos/bricks-stack.webp', alt: 'Stacks of face bricks' },
+  { src: '/photos/foundation.webp', alt: 'Brick foundation filled with sand' },
+  { src: '/photos/site-banner.webp', alt: 'Building site with EzeZhwane Sands banner' },
+  { src: '/photos/bricks-sand.webp', alt: 'Bricks and sand on site' },
 ]
 
 export default function Gallery() {
@@ -17,7 +17,7 @@ export default function Gallery() {
     <main>
       <div
         className="page-hero"
-        style={{ backgroundImage: "url('https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1200&q=70')" }}
+        style={{ backgroundImage: "url('/photos/truck-side.webp')" }}
       >
         <div className="page-hero-overlay" />
         <div className="container page-hero-content">
@@ -30,12 +30,12 @@ export default function Gallery() {
         <div className="container">
           <div className="section-title">
             <h2>Work <span>In Action</span></h2>
-            <p>Placeholder images below. These will be replaced with EzeZhwane's own site photos once provided.</p>
+            <p>Our trucks, our materials and our deliveries on site.</p>
           </div>
           <div className="gallery-grid">
-            {photos.map((src, i) => (
+            {photos.map((p, i) => (
               <div className="gallery-item" key={i}>
-                <img src={src} alt={`EzeZhwane Sands delivery ${i + 1}`} loading="lazy" />
+                <img src={p.src} alt={p.alt} loading="lazy" />
               </div>
             ))}
           </div>

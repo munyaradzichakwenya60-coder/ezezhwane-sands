@@ -48,8 +48,8 @@ export const CATALOG = [
     title: 'Bulk Delivery',
     action: 'order',
     blurb: 'Full 21-tonne truck deliveries across Bulawayo and surrounding areas.',
-    og: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=1000&q=70',
-    thumb: 'https://images.unsplash.com/photo-1601584115197-04ecc0da31d7?w=160&q=60',
+    og: '/og/bulk-delivery.jpg',
+    thumb: '/thumbs/bulk-delivery.webp',
   },
 ]
 
