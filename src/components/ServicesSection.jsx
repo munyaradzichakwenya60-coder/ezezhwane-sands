@@ -28,6 +28,18 @@ const services = [
     img: '/gravel.webp',
   },
   {
+    icon: <MdConstruction size={40} />,
+    title: 'Bricks',
+    desc: 'Quality bricks for building and walling. Message us for the current price and availability.',
+    img: '/photos/bricks-stack.webp',
+  },
+  {
+    icon: <MdConstruction size={40} />,
+    title: 'Cement',
+    desc: 'Cement for building and construction. Message us for the current price and availability.',
+    img: '/photos/cement.webp',
+  },
+  {
     icon: <MdDeleteSweep size={40} />,
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from your site to any required location. Quick, reliable and affordable.',

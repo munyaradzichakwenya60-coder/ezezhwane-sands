@@ -28,6 +28,18 @@ const products = [
     uses: 'Driveways · Landscaping · Fill',
   },
   {
+    title: 'Bricks',
+    desc: 'Quality bricks for building and walling. Message us for the current price and availability.',
+    img: '/photos/bricks-stack.webp',
+    uses: 'Building · Walling · Foundations',
+  },
+  {
+    title: 'Cement',
+    desc: 'Cement for building and construction. Message us for the current price and availability.',
+    img: '/photos/cement.webp',
+    uses: 'Concrete · Plastering · Blocks',
+  },
+  {
     title: 'Rubble Removal',
     desc: 'We collect and remove building rubble from households and construction sites to any required disposal location.',
     img: '/rubble-removal.webp',
@@ -60,7 +72,7 @@ export default function Products() {
         <div className="container">
           <div className="section-title">
             <h2>What We <span>Supply</span></h2>
-            <p>All materials are delivered in 21-tonne truck loads. Contact us on WhatsApp to get a price and confirm availability.</p>
+            <p>Sand, stone and gravel are delivered in 21-tonne truck loads. Contact us on WhatsApp to get a price and confirm availability.</p>
           </div>
           <div className="products-grid">
             {products.map((p, i) => (

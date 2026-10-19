@@ -46,6 +46,8 @@ export default function Footer() {
             <li>Pitsand</li>
             <li>Quarry Stone</li>
             <li>Gravel</li>
+            <li>Bricks</li>
+            <li>Cement</li>
             <li>Rubble Removal</li>
           </ul>
         </div>

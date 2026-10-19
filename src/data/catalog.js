@@ -36,6 +36,22 @@ export const CATALOG = [
     thumb: '/thumbs/gravel.webp',
   },
   {
+    slug: 'bricks',
+    title: 'Bricks',
+    action: 'order',
+    blurb: 'Quality bricks for building and walling, supplied in Bulawayo. Message us for the current price.',
+    og: '/og/bricks.jpg',
+    thumb: '/thumbs/bricks.webp',
+  },
+  {
+    slug: 'cement',
+    title: 'Cement',
+    action: 'order',
+    blurb: 'Cement for building and construction, supplied in Bulawayo. Message us for the current price.',
+    og: '/og/cement.jpg',
+    thumb: '/thumbs/cement.webp',
+  },
+  {
     slug: 'rubble-removal',
     title: 'Rubble Removal',
     action: 'book',
