@@ -30,7 +30,7 @@ const products = [
   {
     title: 'Bricks',
     desc: 'Quality bricks for building and walling. Message us for the current price and availability.',
-    img: '/photos/bricks-stack.webp',
+    img: '/photos/bricks.webp',
     uses: 'Building · Walling · Foundations',
   },
   {
