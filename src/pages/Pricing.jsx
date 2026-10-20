@@ -90,6 +90,39 @@ export default function Pricing() {
             ))}
           </div>
 
+          {/* Payment options */}
+          <div className="pricing-payment">
+            <h3>Payment Options</h3>
+            <div className="pricing-payment-grid">
+              <div className="pricing-payment-card">
+                <div className="pricing-payment-icon">🌍</div>
+                <h4>Diaspora Payments</h4>
+                <p>Clients in the diaspora can deposit payment directly into our <strong>South African bank account</strong>. Contact us on WhatsApp to get the account details before placing your order.</p>
+                <a
+                  href={`https://wa.me/${WHATSAPP}?text=Hi%2C%20I'm%20in%20the%20diaspora%20and%20would%20like%20to%20pay%20via%20your%20SA%20account.%20Please%20send%20me%20the%20details.`}
+                  className="pricing-card-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get SA Account Details
+                </a>
+              </div>
+              <div className="pricing-payment-card">
+                <div className="pricing-payment-icon">🏦</div>
+                <h4>Local Transfers</h4>
+                <p>Local clients can transfer payment into our <strong>local bank account</strong> after discussion and agreement. Reach out on WhatsApp to confirm your order and receive account details.</p>
+                <a
+                  href={`https://wa.me/${WHATSAPP}?text=Hi%2C%20I'm%20a%20local%20client%20and%20would%20like%20to%20pay%20via%20local%20bank%20transfer.%20Please%20advise.`}
+                  className="pricing-card-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Discuss Payment
+                </a>
+              </div>
+            </div>
+          </div>
+
           {/* Disclaimer */}
           <p className="pricing-disclaimer">
             Prices are for delivery within Bulawayo and surrounding areas. Outside-Bulawayo deliveries

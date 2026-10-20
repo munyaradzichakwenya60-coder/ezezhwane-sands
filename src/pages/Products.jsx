@@ -4,15 +4,15 @@ import './PageStyles.css'
 const products = [
   {
     title: 'Riversand',
-    desc: 'Fine, clean riversand ideal for plastering, brickwork, mortar mixing and all general construction use. Sourced from quality river beds.',
+    desc: 'Coarse riversand ideal for concrete mixing, foundation work and heavy construction. Sourced directly from riverbeds for strength and durability.',
     img: '/riversand.png',
-    uses: 'Plastering · Brickwork · Mortar',
+    uses: 'Concrete · Foundations · Heavy Builds',
   },
   {
     title: 'Pitsand',
-    desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy construction. Stronger and coarser than riversand.',
+    desc: 'Fine, clean pitsand ideal for plastering, brickwork, mortar mixing and all general construction finishing work.',
     img: '/pitsand.png',
-    uses: 'Concrete · Foundations · Heavy Builds',
+    uses: 'Plastering · Brickwork · Mortar',
   },
   {
     title: 'Quarry Stone',
