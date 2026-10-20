@@ -95,6 +95,46 @@ export default function Pricing() {
             Prices are for delivery within Bulawayo and surrounding areas. Outside-Bulawayo deliveries
             are available by agreement. Contact us for a quote.
           </p>
+
+          {/* Payment options */}
+          <div className="payment-options">
+            <h2 className="payment-options-title">Payment Options</h2>
+            <p className="payment-options-subtitle">We accept payment before delivery via the following methods:</p>
+            <div className="payment-options-grid">
+              <div className="payment-option-card">
+                <div className="payment-option-icon">🌍</div>
+                <h3>Diaspora (SA Account)</h3>
+                <p>
+                  Customers in the diaspora can deposit funds directly into our South African bank account.
+                  Contact us on WhatsApp for our SA banking details before making payment.
+                </p>
+                <a
+                  href={wa({ product: 'Payment', intent: 'enquire', area: 'Diaspora SA Account', where: 'payment options' })}
+                  className="pricing-card-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get SA Account Details
+                </a>
+              </div>
+              <div className="payment-option-card">
+                <div className="payment-option-icon">🏦</div>
+                <h3>Local Transfer (Zimbabwe)</h3>
+                <p>
+                  Local customers can transfer into our Zimbabwean account after discussing and agreeing
+                  on the order. Contact us to confirm your order first, then we will provide banking details.
+                </p>
+                <a
+                  href={wa({ product: 'Payment', intent: 'enquire', area: 'Local ZW Account', where: 'payment options' })}
+                  className="pricing-card-btn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Get Local Account Details
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </>
