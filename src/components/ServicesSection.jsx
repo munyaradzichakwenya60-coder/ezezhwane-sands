@@ -31,7 +31,7 @@ const services = [
     icon: <MdConstruction size={40} />,
     title: 'Bricks',
     desc: 'Quality bricks for building and walling. Message us for the current price and availability.',
-    img: '/photos/bricks-stack.webp',
+    img: '/photos/bricks.webp',
   },
   {
     icon: <MdConstruction size={40} />,
