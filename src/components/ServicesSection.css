@@ -10,6 +10,8 @@
 }
 
 .service-card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0,0,0,0.08);
@@ -36,7 +38,12 @@
 
 .service-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
+.service-body > p { flex: 1; }
 
 .service-icon {
   color: var(--red);

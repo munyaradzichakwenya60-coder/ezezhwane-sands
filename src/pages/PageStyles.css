@@ -136,6 +136,8 @@
 }
 
 .product-card {
+  display: flex;
+  flex-direction: column;
   background: var(--white);
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0,0,0,0.07);
@@ -149,7 +151,13 @@
 
 .product-card-body {
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
+
+/* description grows so the tags and buttons line up across cards */
+.product-card-body > p:first-of-type { flex: 1; }
 
 .product-card-body h3 {
   font-size: 1.05rem;
@@ -188,9 +196,15 @@
 .product-order-btn:hover { opacity: 0.85; }
 
 .product-actions {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 8px;
-  flex-wrap: wrap;
+  margin-top: auto;
+}
+
+.product-actions .product-order-btn {
+  justify-content: center;
+  white-space: nowrap;
 }
 
 .product-enquire-btn {
