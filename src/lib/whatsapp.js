@@ -37,7 +37,10 @@ export function buildMessage({ intent = 'order', product, area, price, source, e
   const name = item && !ALIASES[product] ? item.title : product
   const lines = []
 
-  if (name && intent === 'enquire') {
+  if (intent === 'payment') {
+    lines.push(`Hi ${BUSINESS}, I'd like the ${extra} banking details so I can pay for an order.`)
+    extra = undefined
+  } else if (name && intent === 'enquire') {
     lines.push(`Hi ${BUSINESS}, I have an enquiry about *${name}*. Is it available, and what is the price?`)
   } else if (name) {
     const verb = item?.action === 'book' ? 'book' : 'order'
