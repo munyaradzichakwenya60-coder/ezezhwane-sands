@@ -4,6 +4,7 @@ const photos = [
   { src: '/photos/truck-side.webp', alt: 'EzeZhwane Sands 21-tonne tipper truck' },
   { src: '/photos/offloading.webp', alt: 'Truck offloading a load of sand' },
   { src: '/photos/truck-front.webp', alt: 'EzeZhwane Sands truck, front view' },
+  { src: '/photos/truck-blue.webp', alt: 'EzeZhwane Sands tipper truck, side view' },
   { src: '/photos/sand-pile.webp', alt: 'Delivered sand on site' },
   { src: '/photos/quarry-stone.webp', alt: 'Crushed quarry stone' },
   { src: '/photos/bricks-stack.webp', alt: 'Stacks of face bricks' },

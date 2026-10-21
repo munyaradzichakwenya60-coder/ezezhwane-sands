@@ -7,13 +7,13 @@ const services = [
   {
     icon: <MdWaves size={40} />,
     title: 'Riversand',
-    desc: 'Fine, clean riversand ideal for plastering, brickwork and general construction use. Delivered in full 21-tonne truck loads.',
+    desc: 'Coarse, clean riversand suitable for concrete mixing, foundation work and heavy construction. Delivered in full 21-tonne truck loads.',
     img: '/riversand.webp',
   },
   {
     icon: <MdTerrain size={40} />,
     title: 'Pitsand',
-    desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy-duty construction projects.',
+    desc: 'Fine pitsand ideal for plastering, brickwork, mortar mixing and general construction use.',
     img: '/pitsand.webp',
   },
   {
