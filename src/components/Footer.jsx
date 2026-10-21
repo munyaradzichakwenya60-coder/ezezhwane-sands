@@ -22,7 +22,7 @@ export default function Footer() {
             <a href={wa({ intent: 'hello', where: 'footer icon' })} target="_blank" rel="noreferrer" aria-label="WhatsApp">
               <FaWhatsapp size={18} />
             </a>
-            <a href="#" aria-label="Facebook">
+            <a href="https://www.facebook.com/61595469277144/" aria-label="Facebook" target="_blank" rel="noopener noreferrer">
               <FaFacebook size={18} />
             </a>
           </div>
