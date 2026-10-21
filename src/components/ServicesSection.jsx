@@ -1,40 +1,41 @@
-import { MdTerrain, MdWater, MdLandscape, MdConstruction, MdDeleteSweep } from 'react-icons/md'
+import { MdTerrain, MdWaves, MdGrain, MdDeleteSweep } from 'react-icons/md'
+import { GiStonePile, GiBrickWall, GiConcreteBag } from 'react-icons/gi'
 import { useWhatsApp } from '../lib/whatsapp'
 import './ServicesSection.css'
 
 const services = [
   {
-    icon: <MdTerrain size={40} />,
+    icon: <MdWaves size={40} />,
     title: 'Riversand',
     desc: 'Fine, clean riversand ideal for plastering, brickwork and general construction use. Delivered in full 21-tonne truck loads.',
     img: '/riversand.webp',
   },
   {
-    icon: <MdWater size={40} />,
+    icon: <MdTerrain size={40} />,
     title: 'Pitsand',
     desc: 'Coarse pitsand suitable for concrete mixing, foundation work and heavy-duty construction projects.',
     img: '/pitsand.webp',
   },
   {
-    icon: <MdLandscape size={40} />,
+    icon: <GiStonePile size={40} />,
     title: 'Quarry Stone',
     desc: 'Crushed quarry stone for concrete aggregates, road construction, drainage and structural foundations.',
     img: '/photos/quarry-stone.webp',
   },
   {
-    icon: <MdConstruction size={40} />,
+    icon: <MdGrain size={40} />,
     title: 'Gravel',
     desc: 'Natural gravel for driveways, landscaping, drainage solutions and construction fill material.',
     img: '/gravel.webp',
   },
   {
-    icon: <MdConstruction size={40} />,
+    icon: <GiBrickWall size={40} />,
     title: 'Bricks',
     desc: 'Quality bricks for building and walling. Message us for the current price and availability.',
     img: '/photos/bricks.webp',
   },
   {
-    icon: <MdConstruction size={40} />,
+    icon: <GiConcreteBag size={40} />,
     title: 'Cement',
     desc: 'Cement for building and construction. Message us for the current price and availability.',
     img: '/photos/cement.webp',
