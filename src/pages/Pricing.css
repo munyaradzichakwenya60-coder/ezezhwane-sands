@@ -204,6 +204,7 @@
   color: #555;
   line-height: 1.6;
   margin: 0;
+  flex: 1;
 }
 
 .payment-option-card .pricing-card-btn {
