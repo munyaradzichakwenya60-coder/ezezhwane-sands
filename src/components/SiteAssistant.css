@@ -1,0 +1,85 @@
+.sa-launcher {
+  position: fixed;
+  right: 28px;
+  bottom: 96px;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 20px 12px 16px;
+  border: 0;
+  border-radius: 50px;
+  background: var(--black);
+  color: var(--white);
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.2s, background 0.2s;
+}
+.sa-launcher:hover { transform: translateY(-2px); background: var(--red); }
+.sa-launcher.is-open { background: var(--red); padding: 0; width: 54px; height: 54px; justify-content: center; border-radius: 50%; }
+
+.sa-panel {
+  position: fixed;
+  right: 28px;
+  bottom: 164px;
+  z-index: 1000;
+  width: 370px;
+  max-height: min(560px, calc(100vh - 200px));
+  display: flex;
+  flex-direction: column;
+  background: var(--white);
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 18px 48px rgba(0, 0, 0, 0.28);
+  animation: sa-in 0.22s ease-out;
+}
+@keyframes sa-in { from { opacity: 0; transform: translateY(12px); } }
+
+.sa-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  background: var(--black);
+  color: var(--white);
+  border-bottom: 3px solid var(--red);
+}
+.sa-head strong { display: block; font-family: var(--font-heading); font-size: 0.95rem; }
+.sa-head small { color: #bbb; font-size: 0.75rem; }
+.sa-head button { background: none; border: 0; color: var(--white); cursor: pointer; font-size: 1rem; padding: 6px; }
+
+.sa-list { flex: 1; overflow-y: auto; padding: 16px; background: var(--gray-light); display: flex; flex-direction: column; gap: 12px; }
+.sa-msg { max-width: 88%; }
+.sa-msg p { margin: 0; padding: 10px 14px; border-radius: 12px; font-size: 0.88rem; line-height: 1.5; white-space: pre-line; }
+.sa-bot p { background: var(--white); color: var(--black); border-top-left-radius: 4px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+.sa-you { align-self: flex-end; }
+.sa-you p { background: var(--red); color: var(--white); border-top-right-radius: 4px; }
+
+.sa-actions { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+.sa-chip {
+  display: inline-flex; align-items: center; gap: 6px;
+  padding: 7px 12px; border-radius: 50px;
+  border: 1.5px solid var(--black); background: var(--white); color: var(--black);
+  font-family: var(--font-heading); font-weight: 600; font-size: 0.75rem;
+  cursor: pointer; text-decoration: none; transition: background 0.15s, color 0.15s;
+}
+.sa-chip:hover { background: var(--black); color: var(--white); }
+.sa-go { border-color: var(--red); color: var(--red); }
+.sa-go:hover { background: var(--red); color: var(--white); }
+.sa-wa { border-color: #25D366; color: #128C4A; }
+.sa-wa:hover { background: #25D366; color: var(--white); }
+
+.sa-form { display: flex; gap: 8px; padding: 10px; border-top: 1px solid var(--gray-mid); background: var(--white); }
+.sa-form input { flex: 1; min-width: 0; border: 1.5px solid var(--gray-mid); border-radius: 50px; padding: 10px 14px; font: inherit; font-size: 0.88rem; }
+.sa-form input:focus { outline: none; border-color: var(--red); }
+.sa-form button { width: 42px; height: 42px; flex: none; border: 0; border-radius: 50%; background: var(--red); color: var(--white); cursor: pointer; }
+
+@media (max-width: 480px) {
+  .sa-launcher span { display: none; }
+  .sa-launcher { width: 54px; height: 54px; padding: 0; justify-content: center; border-radius: 50%; right: 28px; bottom: 94px; }
+  .sa-panel { right: 10px; left: 10px; width: auto; bottom: 160px; max-height: calc(100vh - 190px); }
+}
