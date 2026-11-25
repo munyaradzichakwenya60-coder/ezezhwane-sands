@@ -1,46 +1,17 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
+import { useSearchParams } from 'react-router-dom'
+import { AREAS as areas, areaIndex } from '../data/pricing'
 import { FaGlobeAfrica, FaUniversity } from 'react-icons/fa'
 import { useWhatsApp } from '../lib/whatsapp'
 import './Pricing.css'
 import './PageStyles.css'
 
-const areas = [
-  {
-    name: 'Western Bulawayo',
-    products: [
-      { name: 'Riversand', price: 260 },
-      { name: 'Pitsand', price: 240 },
-      { name: 'Quarry (Transport)', price: 140 },
-    ],
-  },
-  {
-    name: 'Eastern Bulawayo',
-    products: [
-      { name: 'Riversand', price: 270 },
-      { name: 'Pitsand', price: 240 },
-      { name: 'Quarry (Transport)', price: 150 },
-    ],
-  },
-  {
-    name: 'Emzinyathini',
-    products: [
-      { name: 'Riversand', price: 290 },
-      { name: 'Pitsand', price: 270 },
-      { name: 'Quarry (Transport)', price: 190 },
-    ],
-  },
-  {
-    name: 'Cyrene Area',
-    products: [
-      { name: 'Riversand', price: 340 },
-      { name: 'Pitsand', price: 280 },
-      { name: 'Quarry (Transport)', price: 220 },
-    ],
-  },
-]
-
 export default function Pricing() {
-  const [active, setActive] = useState(0)
+  const [params] = useSearchParams()
+  const areaParam = params.get('area')
+  const [active, setActive] = useState(() => areaIndex(areaParam))
+  // The site assistant links here with ?area=..., also while this page is already open.
+  useEffect(() => { if (areaParam) setActive(areaIndex(areaParam)) }, [areaParam])
   const wa = useWhatsApp()
   const area = areas[active]
 
